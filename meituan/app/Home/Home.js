@@ -11,13 +11,21 @@ import {
     StyleSheet,
     Text,
     View,
+    TextInput,
+    Image,
     TouchableOpacity,
+    Dimensions,
 } from 'react-native';
+
+var {width,height} = Dimensions.get('window');
 
 class Home extends Component {
     render() {
         return (
             <View style={styles.container}>
+                {/*首页导航条*/}
+                {this.renderNavBar()}
+
                 <TouchableOpacity onPress={()=>{this.pushToDetail()}}>
                 <Text style={styles.welcome}>
                     首页
@@ -26,6 +34,35 @@ class Home extends Component {
 
             </View>
         );
+    }
+
+    //首页导航条
+    renderNavBar(){
+        return(
+            <View style={styles.navBarStyle}>
+                {/*左边*/}
+                <TouchableOpacity onPress={()=>{alert('点击了')}}>
+                <Text style={{color:'white',fontSize: 15,marginLeft:8}}>成都</Text>
+                </TouchableOpacity>
+                {/*中间*/}
+                <TextInput placeholder="输入商家、品类、商圈"
+                           underlineColorAndroid={'transparent'}
+                           style={styles.navBarInputText}
+                />
+                {/*右边*/}
+                <View style={{flexDirection:'row'}}>
+                    <TouchableOpacity onPress={()=>{alert('点击了')}}>
+                    <Image source={{uri:'icon_homepage_message'}} style={styles.navBarIconStyle}/>
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={()=>{alert('点击了')}}>
+                    <Image source={{uri:'icon_homepage_scan'}} style={styles.navBarIconStyle}/>
+                    </TouchableOpacity>
+                </View>
+
+            </View>
+
+        );
+
     }
 
     //跳转二级界面
@@ -43,10 +80,29 @@ class Home extends Component {
 export {Home as default}
 
 const styles = StyleSheet.create({
+    navBarStyle:{//导航条样式
+        flexDirection:'row',//设置主轴方向 横向
+        justifyContent:'space-around',//设置主轴的对齐方式
+        alignItems:'center',//设置侧轴方向 垂直居中
+        height:54,
+        backgroundColor:'rgba(253,75,31,1.0)',
+    },
+    navBarIconStyle:{
+        width:30,
+        height:30,
+    },
+    navBarInputText:{
+        width:width*0.72,
+        height:40,
+        backgroundColor:'white',
+        borderRadius:18,
+        paddingLeft:8,//设置内左边距
+
+    },
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
+        //justifyContent: 'center',//主轴对齐方式
+        //alignItems: 'center',
         backgroundColor: '#F5FCFF',
     },
     welcome: {

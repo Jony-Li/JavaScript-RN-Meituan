@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0a99725-612b-4192-8f1b-621fe22e9d5b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/meituan/android/app/src/main/res/drawable-xxhdpi/icon_homepage_message.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/meituan/android/app/src/main/res/drawable-xxhdpi/icon_homepage_scan.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meituan/android/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/meituan/android/app/src/main/res/values/styles.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meituan/app/Home/Home.js" afterPath="$PROJECT_DIR$/meituan/app/Home/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meituan/app/Main/Main.js" afterPath="$PROJECT_DIR$/meituan/app/Main/Main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,14 +21,36 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meituan/app/Main/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="83" column="52" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
+            <state relative-caret-position="513">
+              <caret line="85" column="82" lean-forward="false" selection-start-line="84" selection-start-column="48" selection-end-line="85" selection-end-column="82" />
               <folding>
                 <element signature="e#89#128#0" expanded="true" />
                 <element signature="e#856#2322#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Home.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/meituan/app/Home/Home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-427">
+              <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+              <folding>
+                <element signature="e#89#130#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,9 +76,10 @@
         <option value="$PROJECT_DIR$/meituan/app/More/More.js" />
         <option value="$PROJECT_DIR$/meituan/app/Vendor/Vendor.js" />
         <option value="$PROJECT_DIR$/meituan/index.js" />
-        <option value="$PROJECT_DIR$/meituan/app/Home/Home.js" />
         <option value="$PROJECT_DIR$/meituan/app/Home/HomeDetail.js" />
         <option value="$PROJECT_DIR$/meituan/app/Main/Main.js" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/meituan/app/Home/Home.js" />
       </list>
     </option>
   </component>
@@ -65,7 +92,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/meituan/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="274" />
     <option name="y" value="158" />
     <option name="width" value="1306" />
@@ -153,6 +180,11 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="nodejs_interpreter_path" value="E:/Program Files/nodejs/node" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Code\JavaScript_Code\JavaScript-RN-Meituan\meituan\android\app\src\main\res\drawable-xxhdpi" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -177,15 +209,15 @@
       <updated>1513001084749</updated>
       <workItem from="1513001087671" duration="1536000" />
       <workItem from="1513042250331" duration="10723000" />
-      <workItem from="1513219103698" duration="16139000" />
+      <workItem from="1513219103698" duration="21803000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28398000" />
+    <option name="totallyTimeSpent" value="34062000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24183351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -224,7 +256,7 @@
         <state relative-caret-position="162">
           <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
-            <element signature="e#89#130#0" expanded="true" />
+            <element signature="e#89#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -268,7 +300,7 @@
         <state relative-caret-position="324">
           <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding>
-            <element signature="e#89#130#0" expanded="true" />
+            <element signature="e#89#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -278,7 +310,7 @@
         <state relative-caret-position="135">
           <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
-            <element signature="e#89#130#0" expanded="true" />
+            <element signature="e#89#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -328,7 +360,7 @@
         <state relative-caret-position="135">
           <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
-            <element signature="e#89#130#0" expanded="true" />
+            <element signature="e#89#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -346,7 +378,7 @@
         <state relative-caret-position="162">
           <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="34" selection-end-line="16" selection-end-column="34" />
           <folding>
-            <element signature="e#89#130#0" expanded="true" />
+            <element signature="e#89#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -393,7 +425,7 @@
         <state relative-caret-position="459">
           <caret line="21" column="19" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding>
-            <element signature="e#89#130#0" expanded="true" />
+            <element signature="e#89#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -403,28 +435,56 @@
         <state relative-caret-position="486">
           <caret line="22" column="23" lean-forward="true" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding>
-            <element signature="e#89#130#0" expanded="true" />
+            <element signature="e#89#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meituan/app/Home/Home.js">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
-          <folding>
-            <element signature="e#89#130#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="243">
+          <caret line="9" column="18" lean-forward="false" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+          <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/android/app/src/main/res/drawable-xxhdpi/icon_homepage_message_pressed_android.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/meituan/app/Main/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="83" column="52" lean-forward="true" selection-start-line="83" selection-start-column="52" selection-end-line="83" selection-end-column="52" />
+        <state relative-caret-position="513">
+          <caret line="85" column="82" lean-forward="false" selection-start-line="84" selection-start-column="48" selection-end-line="85" selection-end-column="82" />
           <folding>
             <element signature="e#89#128#0" expanded="true" />
             <element signature="e#856#2322#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/android/app/src/main/res/drawable-xxhdpi/icon_homepage_scan.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/android/app/src/main/res/drawable-xxhdpi/icon_tabbar_homepage.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/android/app/src/main/res/drawable-xxhdpi/icon_homepage_message.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/app/Home/Home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-427">
+          <caret line="45" column="35" lean-forward="true" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
+          <folding>
+            <element signature="e#89#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
