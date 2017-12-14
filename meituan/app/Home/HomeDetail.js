@@ -5,49 +5,42 @@
  */
 
 import React, { Component } from 'react';
-import HomeDetail from './HomeDetail';
 import {
     Platform,
     StyleSheet,
     Text,
     View,
-    TouchableOpacity,
+    TouchableOpacity
 } from 'react-native';
 
-class Home extends Component {
+class HomeDetail extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <TouchableOpacity onPress={()=>{this.pushToDetail()}}>
+                <TouchableOpacity onPress={()=>{this.popupToHome()}}>
                 <Text style={styles.welcome}>
-                    首页
+                    测试跳转
                 </Text>
                 </TouchableOpacity>
-
             </View>
         );
     }
 
-    //跳转二级界面
-    pushToDetail(){
-        this.props.navigator.push({
-            title:'详情界面',
-            component:HomeDetail,//需要传递的组件
-        });
+    //回退到主界面
+    popupToHome(){
+        this.props.navigator.pop();
     }
 }
 
 //输出组件
-//export {Home as default}
-
-export {Home as default}
+export {HomeDetail as default}
 
 const styles = StyleSheet.create({
     container: {
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: 'red',
     },
     welcome: {
         fontSize: 20,
