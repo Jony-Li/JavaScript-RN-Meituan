@@ -19,12 +19,12 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-export default class App extends Component<{}> {
+export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          Welcome to React Nativeqqqqq!
         </Text>
         <Text style={styles.instructions}>
           To get started, edit App.js
@@ -48,6 +48,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+      flexDirection:'row',
   },
   instructions: {
     textAlign: 'center',
