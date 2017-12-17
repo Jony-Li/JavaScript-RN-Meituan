@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c0a99725-612b-4192-8f1b-621fe22e9d5b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/meituan/app/More/CommonCell.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/meituan/app/Mine/CommonMyCell.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meituan/app/Home/Home.js" afterPath="$PROJECT_DIR$/meituan/app/Home/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meituan/app/More/More.js" afterPath="$PROJECT_DIR$/meituan/app/More/More.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/meituan/app/Mine/Mine.js" afterPath="$PROJECT_DIR$/meituan/app/Mine/Mine.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,47 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meituan/app/Main/Main.js">
+      <file leaf-file-name="CommonMyCell.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/meituan/app/Mine/CommonMyCell.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1566">
-              <caret line="85" column="82" lean-forward="false" selection-start-line="84" selection-start-column="48" selection-end-line="85" selection-end-column="82" />
-              <folding>
-                <element signature="e#89#128#0" expanded="true" />
-                <element signature="e#856#2322#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Vendor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meituan/app/Vendor/Vendor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="More.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/meituan/app/More/More.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-130">
-              <caret line="42" column="49" lean-forward="true" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#89#130#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonCell.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/meituan/app/More/CommonCell.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1161">
-              <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+            <state relative-caret-position="248">
+              <caret line="105" column="16" lean-forward="true" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
               <folding>
                 <element signature="e#89#130#0" expanded="true" />
               </folding>
@@ -70,8 +33,30 @@
       <file leaf-file-name="Mine.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/meituan/app/Mine/Mine.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+            <state relative-caret-position="162">
+              <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+              <folding>
+                <element signature="e#89#130#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="More.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meituan/app/More/More.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="569">
+              <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonCell.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/meituan/app/More/CommonCell.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1053">
+              <caret line="52" column="97" lean-forward="false" selection-start-line="52" selection-start-column="97" selection-end-line="52" selection-end-column="97" />
               <folding />
             </state>
           </provider>
@@ -86,6 +71,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>rightTitleName</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -93,7 +83,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/meituan/App.js" />
-        <option value="$PROJECT_DIR$/meituan/app/Mine/Mine.js" />
         <option value="$PROJECT_DIR$/meituan/app/Vendor/Vendor.js" />
         <option value="$PROJECT_DIR$/meituan/index.js" />
         <option value="$PROJECT_DIR$/meituan/app/Home/HomeDetail.js" />
@@ -102,6 +91,8 @@
         <option value="$PROJECT_DIR$/meituan/app/Home/Home.js" />
         <option value="$PROJECT_DIR$/meituan/app/More/CommonCell.js" />
         <option value="$PROJECT_DIR$/meituan/app/More/More.js" />
+        <option value="$PROJECT_DIR$/meituan/app/Mine/Mine.js" />
+        <option value="$PROJECT_DIR$/meituan/app/Mine/CommonMyCell.js" />
       </list>
     </option>
   </component>
@@ -114,7 +105,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/meituan/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="274" />
     <option name="y" value="158" />
     <option name="width" value="1306" />
@@ -153,6 +144,13 @@
               <item name="JavaScript-RN-Meituan" type="462c0819:PsiDirectoryNode" />
               <item name="meituan" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaScript-RN-Meituan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaScript-RN-Meituan" type="462c0819:PsiDirectoryNode" />
+              <item name="meituan" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Mine" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaScript-RN-Meituan" type="b2602c69:ProjectViewProjectNode" />
@@ -204,15 +202,15 @@
       <workItem from="1513001087671" duration="1536000" />
       <workItem from="1513042250331" duration="10723000" />
       <workItem from="1513219103698" duration="22010000" />
-      <workItem from="1513495015801" duration="8296000" />
+      <workItem from="1513495015801" duration="13478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42565000" />
+    <option name="totallyTimeSpent" value="47747000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24183351" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -251,7 +249,7 @@
         <state relative-caret-position="1566">
           <caret line="85" column="82" lean-forward="false" selection-start-line="84" selection-start-column="48" selection-end-line="85" selection-end-column="82" />
           <folding>
-            <element signature="e#89#128#0" expanded="true" />
+            <element signature="e#89#128#0" expanded="false" />
             <element signature="e#856#2322#0" expanded="false" />
           </folding>
         </state>
@@ -321,7 +319,7 @@
         <state relative-caret-position="324">
           <caret line="22" column="10" lean-forward="true" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding>
-            <element signature="e#89#130#0" expanded="false" />
+            <element signature="e#89#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -331,8 +329,8 @@
         <state relative-caret-position="135">
           <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#89#130#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#89#130#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -350,7 +348,7 @@
         <state relative-caret-position="1215">
           <caret line="63" column="6" lean-forward="false" selection-start-line="63" selection-start-column="6" selection-end-line="63" selection-end-column="6" />
           <folding>
-            <element signature="e#89#128#0" expanded="true" />
+            <element signature="e#89#128#0" expanded="false" />
             <element signature="e#856#2322#0" expanded="false" />
           </folding>
         </state>
@@ -444,14 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meituan/app/Vendor/Vendor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meituan/app/Home/HomeDetail.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -470,7 +460,7 @@
         <state relative-caret-position="1566">
           <caret line="85" column="82" lean-forward="false" selection-start-line="84" selection-start-column="48" selection-end-line="85" selection-end-column="82" />
           <folding>
-            <element signature="e#89#128#0" expanded="true" />
+            <element signature="e#89#128#0" expanded="false" />
             <element signature="e#856#2322#0" expanded="false" />
           </folding>
         </state>
@@ -496,14 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meituan/app/Mine/Mine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/meituan/node_modules/react-native/Libraries/react-native/React.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -520,22 +502,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/app/Vendor/Vendor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="15" lean-forward="false" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/meituan/app/More/CommonCell.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="53" column="23" lean-forward="true" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="23" />
+        <state relative-caret-position="1053">
+          <caret line="52" column="97" lean-forward="false" selection-start-line="52" selection-start-column="97" selection-end-line="52" selection-end-column="97" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/app/More/More.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="569">
+          <caret line="61" column="19" lean-forward="false" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/meituan/app/Mine/Mine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
           <folding>
             <element signature="e#89#130#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/meituan/app/More/More.js">
+    <entry file="file://$PROJECT_DIR$/meituan/app/Mine/CommonMyCell.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-130">
-          <caret line="42" column="49" lean-forward="true" selection-start-line="42" selection-start-column="49" selection-end-line="42" selection-end-column="49" />
+        <state relative-caret-position="248">
+          <caret line="105" column="16" lean-forward="true" selection-start-line="105" selection-start-column="16" selection-end-line="105" selection-end-column="16" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
             <element signature="e#89#130#0" expanded="true" />
           </folding>
         </state>
