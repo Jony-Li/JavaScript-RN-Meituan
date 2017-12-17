@@ -25,7 +25,6 @@ class Home extends Component {
             <View style={styles.container}>
                 {/*首页导航条*/}
                 {this.renderNavBar()}
-
                 <TouchableOpacity onPress={()=>{this.pushToDetail()}}>
                 <Text style={styles.welcome}>
                     首页
@@ -42,7 +41,7 @@ class Home extends Component {
             <View style={styles.navBarStyle}>
                 {/*左边*/}
                 <TouchableOpacity onPress={()=>{alert('点击了')}}>
-                <Text style={{color:'white',fontSize: 15,marginLeft:8}}>成都</Text>
+                <Text style={{color:'white',fontSize: 15,marginLeft:8,marginRight:8}}>成都</Text>
                 </TouchableOpacity>
                 {/*中间*/}
                 <TextInput placeholder="输入商家、品类、商圈"
@@ -88,12 +87,12 @@ const styles = StyleSheet.create({
         backgroundColor:'rgba(253,75,31,1.0)',
     },
     navBarIconStyle:{
-        width:30,
-        height:30,
+        width:25,
+        height:25,
     },
     navBarInputText:{
         width:width*0.72,
-        height:40,
+        height:38,
         backgroundColor:'white',
         borderRadius:18,
         paddingLeft:8,//设置内左边距
