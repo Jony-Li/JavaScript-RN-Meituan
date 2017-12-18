@@ -6,34 +6,44 @@
 
 import React, { Component } from 'react';
 import CommonMyCell from './CommonMyCell';
+import MineMiddleView from './MineMiddleView';
+import MineHeaderView from './MineHeaderView';
 import {
     Platform,
     StyleSheet,
     Text,
     View,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    ScrollView
 } from 'react-native';
 
 class Mine extends Component {
     render() {
         return (
-            <View style={styles.container}>
-                <View style={{marginTop:16}}>
-                    <CommonMyCell leftIconName='draft' leftTitleName='美团钱包' rightTitleName='账户余额：￥120'/>
-                    <CommonMyCell leftIconName='like' leftTitleName='抵用券' rightTitleName='0'/>
-                </View>
-                <View style={{marginTop:16}}>
-                    <CommonMyCell leftIconName='card' leftTitleName='积分商城' rightTitleName=''/>
-                </View>
-                <View style={{marginTop:16}}>
-                    <CommonMyCell leftIconName='new_friend' leftTitleName='今日推荐' rightIconName='me_new'/>
-                </View>
-                <View style={{marginTop:16}}>
-                    <CommonMyCell leftIconName='pay' leftTitleName='我要合作' rightTitleName='轻松开店，招财进宝'/>
-                </View>
+            <ScrollView>
+                <MineHeaderView/>
+                <View style={styles.container}>
+                    <View style={{marginTop:0}}>
+                        <CommonMyCell leftIconName='collect' leftTitleName='我的订单' rightTitleName='查看全部订单'/>
+                        <MineMiddleView/>
+                    </View>
+                    <View style={{marginTop:16}}>
+                        <CommonMyCell leftIconName='draft' leftTitleName='美团钱包' rightTitleName='账户余额：￥120'/>
+                        <CommonMyCell leftIconName='like' leftTitleName='抵用券' rightTitleName='0'/>
+                    </View>
+                    <View style={{marginTop:16}}>
+                        <CommonMyCell leftIconName='card' leftTitleName='积分商城' rightTitleName=''/>
+                    </View>
+                    <View style={{marginTop:16}}>
+                        <CommonMyCell leftIconName='new_friend' leftTitleName='今日推荐' rightIconName='me_new'/>
+                    </View>
+                    <View style={{marginTop:16}}>
+                        <CommonMyCell leftIconName='pay' leftTitleName='我要合作' rightTitleName='轻松开店，招财进宝'/>
+                    </View>
 
-            </View>
+                </View>
+            </ScrollView>
         );
     }
 }
