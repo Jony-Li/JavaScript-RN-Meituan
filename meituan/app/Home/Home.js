@@ -7,6 +7,7 @@
 import React, { Component } from 'react';
 import HomeDetail from './HomeDetail';
 import TopView from './TopView';
+import  MiddleView from  './MiddleView';
 import {
     Platform,
     StyleSheet,
@@ -28,7 +29,11 @@ class Home extends Component {
                 {/*首页导航条*/}
                 {this.renderNavBar()}
                 <ScrollView>
+                    {/*头部view*/}
                     <TopView/>
+                    {/*中间view*/}
+                    <MiddleView/>
+
                 </ScrollView>
 {/*                <TouchableOpacity onPress={()=>{this.pushToDetail()}}>
                 <Text style={styles.welcome}>

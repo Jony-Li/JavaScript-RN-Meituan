@@ -5,6 +5,8 @@
  */
 
 import React, { Component } from 'react';
+import TopListView from './TopListView';
+import TopMenu from '../../LocalData/TopMenu.json';
 import {
     Platform,
     StyleSheet,
@@ -78,13 +80,17 @@ class TopView extends Component {
     renderScrollViewItem(){
         //组件数组
         var itemArr = [];
-        //颜色数组
+        //颜色数组  ----数据数组
         var colorArr = ['red','green'];
-        for (var i=0; i<colorArr.length;i++){
-            itemArr.push(
-                <View key={i} style={{backgroundColor:colorArr[i],height:120,width:width}}>
+        // 数据数组
+        var dataArray = TopMenu.data;
+
+        {/*<View key={i} style={{backgroundColor:colorArr[i],height:120,width:width}}>
                     <Text>{i}</Text>
-                </View>
+                </View>*/}
+        for (var i=0; i<dataArray.length;i++){
+            itemArr.push(
+                <TopListView key={i}  dataArray={dataArray[i]}/>
             );
         }
         return itemArr;
