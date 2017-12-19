@@ -6,6 +6,7 @@
 
 import React, { Component } from 'react';
 import HomeDetail from './HomeDetail';
+import TopView from './TopView';
 import {
     Platform,
     StyleSheet,
@@ -15,6 +16,7 @@ import {
     Image,
     TouchableOpacity,
     Dimensions,
+    ScrollView,
 } from 'react-native';
 
 var {width,height} = Dimensions.get('window');
@@ -25,11 +27,14 @@ class Home extends Component {
             <View style={styles.container}>
                 {/*首页导航条*/}
                 {this.renderNavBar()}
-                <TouchableOpacity onPress={()=>{this.pushToDetail()}}>
+                <ScrollView>
+                    <TopView/>
+                </ScrollView>
+{/*                <TouchableOpacity onPress={()=>{this.pushToDetail()}}>
                 <Text style={styles.welcome}>
                     首页
                 </Text>
-                </TouchableOpacity>
+                </TouchableOpacity>*/}
 
             </View>
         );
