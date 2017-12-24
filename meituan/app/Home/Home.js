@@ -112,7 +112,7 @@ const styles = StyleSheet.create({
         flex: 1,
         //justifyContent: 'center',//主轴对齐方式
         //alignItems: 'center',
-        backgroundColor: '#F5FCFF',
+        backgroundColor: '#dddddd',
     },
     welcome: {
         fontSize: 20,

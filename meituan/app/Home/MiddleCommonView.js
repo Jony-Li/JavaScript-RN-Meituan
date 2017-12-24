@@ -28,19 +28,18 @@ class MiddleCommonView extends Component {
         }
     }
 
-
-
     render() {
+        var color = this.props.titleColor;
         return (
             <TouchableOpacity onPress={()=>{alert("点击了")}}>
                 <View style={styles.container}>
                     {/*左边*/}
                     <View>
-                        <Text>{this.props.title}</Text>
-                        <Text>{this.props.subTitle}</Text>
+                        <Text style={{color:color}}>{this.props.title}</Text>
+                        <Text style={styles.subTitleStyle}>{this.props.subTitle}</Text>
                     </View>
                     {/*右边*/}
-                    <Image source={{uri:this.props.rightIcon}} style={{width:64,height:40}}/>
+                    <Image source={{uri:this.props.rightIcon}} style={{width:64,height:43}}/>
                 </View>
             </TouchableOpacity>
         );
@@ -51,14 +50,24 @@ class MiddleCommonView extends Component {
 export {MiddleCommonView as default}
 
 const styles = StyleSheet.create({
+    subTitleStyle:{
+        color:'gray',
+    },
+
+    titleStyle:{
+        //color:this.props.titleColor,
+        fontSize:25,
+        fontWeight:'bold',
+    },
     container: {
         flexDirection:'row',
-        //justifyContent: 'center',
-        //alignItems: 'center',
+        justifyContent: 'space-around',//设置主轴布局
+        alignItems: 'center',//侧轴垂直居中
         backgroundColor: 'white',
         width:width*0.5 -1,
-        height:60,
-        borderBottomColor:'#dddddd',
-        borderBottomWidth:0.6,
+        height:59,
+        marginBottom:1,
+        //borderBottomColor:'#dddddd',
+        //borderBottomWidth:0.6,
     },
 });

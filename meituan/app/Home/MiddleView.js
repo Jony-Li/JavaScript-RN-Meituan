@@ -13,8 +13,11 @@ import {
     Text,
     View,
     Image,
-    TouchableOpacity
+    TouchableOpacity,
+    Dimensions
 } from 'react-native';
+
+var {width} = Dimensions.get('window');
 
 class MiddleView extends Component {
     render() {
@@ -30,7 +33,21 @@ class MiddleView extends Component {
         );
     }
     renderLeftView(){
-
+        //获取左边View显示的数据
+        var leftData = TopMiddleData.dataLeft;
+        return(
+            <TouchableOpacity onPress={()=>{alert("点击了")}}>
+            <View style={styles.leftViewStyle}>
+                <Image source={{uri:leftData[0].img1}} style={styles.leftImage1ViewStyle}/>
+                <Image source={{uri:leftData[0].img2}} style={styles.leftImage2ViewStyle}/>
+                <Text style={{color:'grey'}}>{leftData[0].title}</Text>
+                <View style={{flexDirection:'row'}}>
+                    <Text style={{color:'#32B9AA',marginRight:5}}>{leftData[0].price}</Text>
+                    <Text style={{color:'orange',backgroundColor:'yellow'}}>{leftData[0].sale}</Text>
+                </View>
+            </View>
+            </TouchableOpacity>
+        );
     }
 
     renderRightView(){
@@ -40,7 +57,7 @@ class MiddleView extends Component {
         for(var i=0;i<rightData.length;i++){
             var data= rightData[i];
             itemArr.push(
-                <MiddleCommonView key={i} title={data.title} subTitle={data.subTitle} rightIcon={data.rightImage} titleColor={data.titleColor}/>
+                <MiddleCommonView key={i} title={data.title} subTitle={data.subTitle} titleColor={data.titleColor} rightIcon={data.rightImage}/>
             );
         }
         return itemArr;
@@ -51,11 +68,34 @@ class MiddleView extends Component {
 export {MiddleView as default}
 
 const styles = StyleSheet.create({
+    leftViewStyle:{
+        //水平和垂直居中
+        justifyContent:'center',
+        alignItems:'center',
+        width:width*0.5,
+        height:119,
+        backgroundColor:'white',
+        marginRight:1,
+        //borderRightWidth:1,
+        //borderBottomColor:'#dddddd',
+    },
+    leftImage1ViewStyle:{
+        width:120,
+        height:30,
+        //设置图片内容模式
+        resizeMode:'contain'
+    },
+    leftImage2ViewStyle:{
+        width:120,
+        height:30,
+        //设置图片内容模式
+        resizeMode:'contain'
+    },
     container: {
         flexDirection:'row',
-        //justifyContent: 'center',
+        justifyContent: 'space-around',
         //alignItems: 'center',
-        backgroundColor: '#F5FCFF',
-        marginTop:16,
+        backgroundColor: '#dddddd',
+        marginTop:14,
     }
 });
