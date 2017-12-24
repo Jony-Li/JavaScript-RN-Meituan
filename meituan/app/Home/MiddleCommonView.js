@@ -5,6 +5,7 @@
  */
 
 import React, { Component } from 'react';
+import HomeDetail from './HomeDetail';
 import {
     Platform,
     StyleSheet,
@@ -25,13 +26,15 @@ class MiddleCommonView extends Component {
             subTitle:'',
             rightIcon:'',
             titleColor:'',
+            url:'',
         }
     }
 
     render() {
         var color = this.props.titleColor;
+        var url = this.props.url;
         return (
-            <TouchableOpacity onPress={()=>{alert("点击了")}}>
+            <TouchableOpacity onPress={()=>{this.loadUrlWebsite(url)}}>
                 <View style={styles.container}>
                     {/*左边*/}
                     <View>
@@ -39,10 +42,26 @@ class MiddleCommonView extends Component {
                         <Text style={styles.subTitleStyle}>{this.props.subTitle}</Text>
                     </View>
                     {/*右边*/}
-                    <Image source={{uri:this.props.rightIcon}} style={{width:64,height:43}}/>
+                    <Image source={{uri:this.props.rightIcon}} style={{width:64,height:43,resizeMode:'contain'}}/>
                 </View>
             </TouchableOpacity>
         );
+    }
+
+    //加载详细界面
+    loadUrlWebsite(url){
+        this.props.navigator.push({
+            title:'详情界面',
+            component:HomeDetail,//需要传递的组件
+            url:url,//传递属性
+        });
+    }
+
+    pushToDetail(){
+        this.props.navigator.push({
+            title:'详情界面',
+            component:HomeDetail,//需要传递的组件
+        });
     }
 }
 
@@ -67,6 +86,7 @@ const styles = StyleSheet.create({
         width:width*0.5 -1,
         height:59,
         marginBottom:1,
+        marginRight:1,
         //borderBottomColor:'#dddddd',
         //borderBottomWidth:0.6,
     },

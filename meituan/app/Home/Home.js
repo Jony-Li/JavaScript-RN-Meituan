@@ -7,7 +7,8 @@
 import React, { Component } from 'react';
 import HomeDetail from './HomeDetail';
 import TopView from './TopView';
-import  MiddleView from  './MiddleView';
+import MiddleView from  './MiddleView';
+import MiddleBottomView from './MiddleBottomView';
 import {
     Platform,
     StyleSheet,
@@ -32,10 +33,12 @@ class Home extends Component {
                     {/*头部view*/}
                     <TopView/>
                     {/*中间view*/}
-                    <MiddleView/>
+                    <MiddleView navigator={this.props.navigator}/>
+                    {/*中间下半部分内容*/}
+                    <MiddleBottomView navigator={this.props.navigator}/>
 
                 </ScrollView>
-{/*                <TouchableOpacity onPress={()=>{this.pushToDetail()}}>
+                {/*<TouchableOpacity onPress={()=>{this.pushToDetail()}}>
                 <Text style={styles.welcome}>
                     首页
                 </Text>
