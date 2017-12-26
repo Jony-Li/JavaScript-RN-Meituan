@@ -9,6 +9,7 @@ import HomeDetail from './HomeDetail';
 import TopView from './TopView';
 import MiddleView from  './MiddleView';
 import MiddleBottomView from './MiddleBottomView';
+import ShopCenter from './ShopCenter/ShopCenter';
 import {
     Platform,
     StyleSheet,
@@ -36,8 +37,11 @@ class Home extends Component {
                     <MiddleView navigator={this.props.navigator}/>
                     {/*中间下半部分内容*/}
                     <MiddleBottomView navigator={this.props.navigator}/>
-
+                    {/*购物中心*/}
+                    <ShopCenter/>
+                    <Text style={styles.welcome}>**我也是有底线的**</Text>
                 </ScrollView>
+
                 {/*<TouchableOpacity onPress={()=>{this.pushToDetail()}}>
                 <Text style={styles.welcome}>
                     首页
@@ -118,9 +122,13 @@ const styles = StyleSheet.create({
         backgroundColor: '#dddddd',
     },
     welcome: {
-        fontSize: 20,
+        fontSize: 13,
         textAlign: 'center',
-        margin: 10,
+        //margin: 10,
+        marginBottom:10,
+        marginTop:4,
         flexDirection:'row',
+        color:'grey',
+        //backgroundColor:'white',
     },
 });

@@ -44,7 +44,7 @@ class MiddleBottomView extends Component {
             <TouchableOpacity onPress={()=>{alert('点击了')}}>
                 <View style={styles.topViewStyle}>
                     <View>
-                        <Text style={{fontSize:28,color:'#FB7F66',fontWeight:'bold'}}>最高立减200元</Text>
+                        <Text style={{fontSize:25,color:'#FB7F66',fontWeight:'bold'}}>最高立减200元</Text>
                         <Text style={{color:'grey'}}>新用户     注册专享</Text>
                     </View>
                     <Image source={{uri: 'nsj'}} style={{width:120,height:59,resizeMode:'contain'}}/>
