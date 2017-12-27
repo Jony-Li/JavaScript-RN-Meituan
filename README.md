@@ -20,7 +20,6 @@
     MiddleView navigator={this.props.navigator}/>
 
 ```
-
 ```jsx
     itemArr.push(
         <MiddleCommonView key={i} title={data.title}
@@ -30,13 +29,13 @@
                           rightIcon={data.rightImage}/>
         );
 ```
-
-
 * **性能优化:**1.可以将需要图片尺寸的大小(w.h)放到url中，将数据处理放在后台服务器，提升客户端的相应速度。
 
 ```JSX
     http://p0.meituan.net/w.h/groupop/9aa35eed64db45aa33f9e74726c59d938450.png
+    //例如40*40
+    http://p0.meituan.net/40.40/groupop/9aa35eed64db45aa33f9e74726c59d938450.png
 ```
 
-### 美团Demo演示
+### Demo演示
 ![image](https://github.com/Jony-Li/JavaScript-RN-Meituan/blob/master/meituan/JavaScript-RN-Meituan.gif)
