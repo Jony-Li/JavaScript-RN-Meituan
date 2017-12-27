@@ -17,26 +17,26 @@
 
 * **参数传递方式:**1.组件从上到下方式传递(将navigator传递给子组件)；2.回调函数方式传递（将参数传递给父类容器组件）
 ```jsx
-        MiddleView navigator={this.props.navigator}/>
+    MiddleView navigator={this.props.navigator}/>
 
 ```
 
 ```jsx
-        itemArr.push(
-            <MiddleCommonView key={i} title={data.title}
-                              subTitle={data.subTitle}
-                              navigator={this.props.navigator}
-                              titleColor={data.titleColor}
-                              rightIcon={data.rightImage}/>
-            );
+    itemArr.push(
+        <MiddleCommonView key={i} title={data.title}
+                          subTitle={data.subTitle}
+                          navigator={this.props.navigator}
+                          titleColor={data.titleColor}
+                          rightIcon={data.rightImage}/>
+        );
 ```
 
 
 * **性能优化:**1.可以将需要图片尺寸的大小(w.h)放到url中，将数据处理放在后台服务器，提升客户端的相应速度。
 
 ```JSX
-http://p0.meituan.net/w.h/groupop/9aa35eed64db45aa33f9e74726c59d938450.png
+    http://p0.meituan.net/w.h/groupop/9aa35eed64db45aa33f9e74726c59d938450.png
 ```
 
-# 美团Demo演示
+### 美团Demo演示
 ![image](https://github.com/Jony-Li/JavaScript-RN-Meituan/blob/master/meituan/JavaScript-RN-Meituan.gif)
