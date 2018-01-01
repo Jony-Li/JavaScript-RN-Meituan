@@ -36,6 +36,21 @@
     //例如40*40
     http://p0.meituan.net/40.40/groupop/9aa35eed64db45aa33f9e74726c59d938450.png
 ```
+* **用户体验:**美团APP很多界面(例如：商家)都是web网页，将逻辑处理交给后台服务器，客户端负责UI显示，提升响应速度和用户体验。
+```JSX
+    <WebView
+        style={styles.webView}
+        automaticallyAdjustContentInsets={true}
+        source={{uri: 'http://cd.meituan.com/s/%E5%95%86%E5%AE%B6/'}}
+        javaScriptEnabled={true}
+        domStorageEnabled={true}
+        decelerationRate="normal"
+        //onNavigationStateChange={this.onNavigationStateChange}
+        //onShouldStartLoadWithRequest={this.onShouldStartLoadWithRequest}
+        startInLoadingState={true}
+        scalesPageToFit={true}
+    />
+```
 
 ### Demo演示
 ![image](https://github.com/Jony-Li/JavaScript-RN-Meituan/blob/master/meituan/JavaScript-RN-Meituan.gif)
