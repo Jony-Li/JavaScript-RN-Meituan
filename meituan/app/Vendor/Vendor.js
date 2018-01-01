@@ -9,18 +9,65 @@ import {
     Platform,
     StyleSheet,
     Text,
-    View
+    View,
+    TouchableOpacity,
+    WebView,
+    Image,
+    Dimensions
 } from 'react-native';
 
+var {width,height} = Dimensions.get('window');
+
 class Vendor extends Component {
+    constructor(props){
+        super(props);
+        //alert(this.props.url);
+        this.state={
+        }
+    }
+
+    //美团APP很多界面(例如：商家)都是web网页，将逻辑处理交给后台服务器，客户端负责UI显示，
+    //提升响应速度和用户体验。
     render() {
         return (
             <View style={styles.container}>
-                <Text style={styles.welcome}>
-                    商家
-                </Text>
+                {/*导航条*/}
+                {this.renderNavBar()}
+                {/*页面内容*/}
+                <WebView
+                    style={styles.webView}
+                    automaticallyAdjustContentInsets={true}
+                    source={{uri: 'http://cd.meituan.com/s/%E5%95%86%E5%AE%B6/'}}
+                    javaScriptEnabled={true}
+                    domStorageEnabled={true}
+                    decelerationRate="normal"
+                    //onNavigationStateChange={this.onNavigationStateChange}
+                    //onShouldStartLoadWithRequest={this.onShouldStartLoadWithRequest}
+                    startInLoadingState={true}
+                    scalesPageToFit={true}
+                />
             </View>
         );
+    }
+
+    renderNavBar(){
+        return(
+            <View style={styles.navOutViewStyle}>
+                {/*--左边--*/}
+                <TouchableOpacity onPress={()=>{this.popupToHome()}} style={styles.leftViewStyle}>
+                    {/*<Image source={{uri:'navigationbar_arrow_up'}} style={styles.navImageStyle}/>*/}
+                </TouchableOpacity>
+                {/*--中间--*/}
+                <Image source={{uri:'icon_homepage_map_selected'}} style={styles.navImageStyle}/>
+                <Text style={{color:'white',fontSize:17,fontWeight:'bold'}}>附近商家</Text>
+                {/*--右边--*/}
+            </View>
+        );
+    }
+
+    //回退到主界面
+    popupToHome(){
+        this.props.navigator.pop();
     }
 }
 
@@ -28,16 +75,42 @@ class Vendor extends Component {
 export {Vendor as default}
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
+    navOutViewStyle:{
+        flexDirection:'row',//设置主轴方向 横向
+        justifyContent:'center',//设置主轴方向的对其方式 居中
+        alignItems:'center',//设置侧轴的对齐方式  居中
+        width:width,
+        height:54,
+        backgroundColor:'rgba(253,75,31,1.0)',
+
+    },
+    leftViewStyle:{
+        //绝对定位
+        position:'absolute',
+        left:10,
+    },
+    rightViewStyle:{
+        //绝对定位
+        position:'absolute',
+        right:10,
+    },
+    navImageStyle:{
+        width:Platform.OS === 'ios'?11 : 30,
+        height:Platform.OS === 'ios'?20 : 30,
+
+    },
+    webView: {
+        //flex:1,
+        width:width,
+        height:height,
+        //paddingTop:20,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#F5FCFF',
     },
-    welcome: {
-        fontSize: 20,
-        textAlign: 'center',
-        margin: 10,
-        flexDirection:'row',
-    },
+    container: {
+        flex:1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#dddddd',
+    }
 });
