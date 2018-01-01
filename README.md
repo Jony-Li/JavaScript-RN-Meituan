@@ -22,11 +22,12 @@
 ```
 ```jsx
     itemArr.push(
-        <MiddleCommonView key={i} title={data.title}
-                          subTitle={data.subTitle}
-                          navigator={this.props.navigator}
-                          titleColor={data.titleColor}
-                          rightIcon={data.rightImage}/>
+        <MiddleCommonView key={i}
+          title={data.title}
+          subTitle={data.subTitle}
+          navigator={this.props.navigator}
+          titleColor={data.titleColor}
+          rightIcon={data.rightImage}/>
         );
 ```
 * **性能优化:**1.可以将需要图片尺寸的大小(w.h)放到url中，将数据处理放在后台服务器，提升客户端的相应速度。
